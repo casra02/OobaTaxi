@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.ar.core.examples.java.helloar.WaitingActivity"
+    android:orientation="vertical">
+
+  <FrameLayout
+      android:id="@+id/frame_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/addRegionBtn"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_rowWeight="1"
+      android:layout_columnWeight="1"
+      android:layout_margin="12dp"
+      app:cardCornerRadius="12dp"
+      app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:text="Waiting For Driver To Arrive"
+          android:textColor="#FFFFFF"
+          android:textSize="26sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/eta_text"
+          android:layout_gravity="left"
+          android:layout_marginTop="12dp"
+          android:text="ETA:"
+          android:textColor="#FFFFFF"
+          android:textSize="18sp" />
+      <Button
+          android:id="@+id/play_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:paddingRight="10dp"
+          android:paddingLeft="10dp"
+          android:text="Bored? Click me!"
+          android:background="#FFFFFF"
+          android:textColor="#000000"
+          />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
